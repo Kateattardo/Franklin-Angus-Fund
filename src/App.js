@@ -3,7 +3,7 @@ import TopBar from "./components/TopBar";
 import NavBar from "./components/NavBar";
 import Hero from "./components/Hero";
 import About from "./components/About";
-// import Beneficiaries from "./components/Beneficiaries";
+import Beneficiaries from "./components/Beneficiaries";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <NavBar />
       <Hero />
       <About />
-      {/* <Beneficiaries /> */}
+      <Beneficiaries />
     </div>
   );
 }
