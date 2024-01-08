@@ -7,7 +7,7 @@ const NavBar = () => {
     setNav(!nav);
   };
   return (
-    <div className="w-full min-h-[50px] flex justify-between items-center absolute z-10 text-white bg-gray-700/80">
+    <div className="w-full min-h-[50px] flex justify-between items-center absolute z-10 text-white bg-blue-700/80">
       <ul className="hidden sm:flex px-4">
         <li>
           <a href="/">Home</a>
@@ -19,7 +19,7 @@ const NavBar = () => {
           <a href="#application">Application</a>
         </li>
         <li>
-          <a href="#benificiaries">Benificiaries</a>
+          <a href="#benificiaries">Beneficiaries</a>
         </li>
         <li>
           <a href="#contact">Contact</a>
@@ -53,7 +53,7 @@ const NavBar = () => {
             <a href="#application">Application</a>
           </li>
           <li className="text-2xl py-8">
-            <a href="#benificiaries">Benificiaries</a>
+            <a href="#benificiaries">Beneficiaries</a>
           </li>
           <li className="text-2xl py-8">
             <a href="#contact">Contact</a>

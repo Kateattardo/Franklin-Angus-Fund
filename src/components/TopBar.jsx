@@ -1,12 +1,11 @@
 import React from "react";
+import logo from "../assets/FAF Logo/IMG_7507.JPG";
 
 const TopBar = () => {
   return (
     <div className="flex justify-between items-center px-4 py-2">
       <div className="flex items-center">
-        <h1 className="text-xl font-bold text-grey-700">
-          Franklin Angus Fund{" "}
-        </h1>
+        <img src={logo} alt="Franklin Angus Fund Logo" className="h-40" />
       </div>
       <div>
         <p className="text-sm text-grey-700">

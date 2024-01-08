@@ -14,8 +14,8 @@ const Hero = () => {
           <h1 className="front-bold text-4xl">
             Helping Dogs And Their Owners since 2000
           </h1>
-          <h2 className="text-4xl py-4 italic ">With Franklin Angus Fund</h2>
-          <p>Want info here?</p>
+          {/* <h2 className="text-4xl py-4 italic ">With Franklin Angus Fund</h2> */}
+          <p className="text-4xl py-4 italic">Want info here?</p>
         </div>
       </div>
     </div>
