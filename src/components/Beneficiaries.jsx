@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
 import image1 from "../assets/FAF Beneficiaries/IMG_8046.PNG";
@@ -11,6 +11,14 @@ const Beneficiaries = () => {
   const images = [image1, image2, image3, image4, image5];
 
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextImage();
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [currentIndex]);
 
   const prevImage = () => {
     const isFirstImage = currentIndex === 0;
@@ -39,17 +47,6 @@ const Beneficiaries = () => {
           className="w-full h-full rounded-2xl bg-center bg-cover duration-500"
           style={{ backgroundImage: `url(${images[currentIndex]})` }}
         ></div>
-        {/* <div className="max-w-[1400px] h-[580px] w-full m-auto py-16 px-4 relative group">
-        {images.map((img, index) => (
-          <img
-            key={index}
-            src={img}
-            alt={`Slide ${index}`}
-            className={`w-full h-full object-cover rounded-2xl ${
-              currentIndex === index ? "block" : "hidden"
-            }`}
-          />
-        ))} */}
 
         {/*left arrow*/}
         <div className="absolute top-[50%] -translate-x-0 translate-y-[50%] left-5 text-2xl rounded-full p-2 group-hover:bg-black/20 text-white cursor-pointer">
